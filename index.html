@@ -355,6 +355,13 @@
         var button = document.querySelector('#btn');
         let isOpened = false;
         var screenWidth = window.innerWidth;
+
+        window.addEventListener('resize', function() {
+      if (window.innerWidth <= 1450) {
+        location.reload();
+      }
+    });
+
         button.addEventListener('click', function () {
             if (screenWidth >= 1450) {
                 if (!isOpened) {
