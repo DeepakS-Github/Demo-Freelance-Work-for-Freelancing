@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f4f6f9;
+}
+
+section{
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #6777ef;
+    display: flex;
+    color: white;
+}
+
+.left{
+    padding: 20px;
+    width: 70%;
+    margin-left: 36px;
+}
+
+.left i{
+    font-size: 25px;
+}
+
+.right{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+    width: 30%;
+    margin-right: 36px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.upper{
+    display: flex;
+    justify-content: center;
+}
+
+.web-link i{
+    font-size: 18px;
+    padding-right: 8px;
+}
+
+.profile-link{
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.nami{
+    padding-left: 8px;
+}
+.profile-link img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.main-head{
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    width: 90%;
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    font-weight: 500;
+    font-size: 24px;
+    transform: translate(0%, 100%);
+    border-radius: 3px;
+
+}
+
+.cards{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-outer{
+    display: flex;
+    width: 93%;
+    
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-item{
+    flex-basis: 25%;
+    max-width: 320px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 3px;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.cards-img{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.cards-img i{
+    font-size: 25px;
+}
+
+.cards-color-1{
+    background-color: #6777ef;
+}
+.cards-color-2{
+    background-color: #ffa426;
+}
+.cards-color-3{
+    background-color: #47c363;
+}
+.cards-color-4{
+    background-color: #fc544b;
+}
+
+.cards-text{
+    width: 60%;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1.4;
+    color: #98a6ad;
+    padding-left: 5px;
+    margin: 25px 0;
+}
+
+.head{
+    display: block;
+    font-weight: 500;
+    color: #34395e;
+    font-size: 25px;
+    
+}
+
+/* Table */
+
+.table-contain{
+    margin: 80px 0px;
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    color: #6c757d;
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .header {
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    
+  }
+
+  .main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-content p,
+  .footer p {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .left-content p input{
+    padding: 8px;
+    width: 15px;
+  }
+  
+  .right-content p {
+    font-size: 13px;
+  }
+  
+
+  .right-content input[type="search"] {
+    padding: 8px;
+  }
+  
+  table {
+    width: 100%;
+    
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid #0000000A;
+  }
+  
+  
+  th,
+  td {
+    border: none;
+  }
+
+  th{
+    padding: 15px 30px 15px 12px ;
+    text-align: left;
+    background-color: #0000000A;
+    font-size: 16px;
+    color: #666666;
+    border-bottom: 2px solid #0000000A;
+  }
+  
+
+  td{
+    padding: 15px;;
+  }
+  
+  .odd-row {
+    background-color: #fafafa;
+  }
+  
+  .even-row {
+    background-color: white;
+  }
+  
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .pagination{
+    color: #6777ef;
+  }
+
+  .box{
+    padding: 8px 12px;
+    margin: 0 8px;
+    color: white;
+    border-radius: 4px;
+    background-color: #6777ef;
+  }
+
+  tbody tr{
+    font-size: 15px;
+  }
+
+  .pending{
+    padding: 5px 15px;
+    border-radius: 60px;
+    background-color: #fc544b;
+    color: white;
+    font-size: 13px;
+  }
+
+  
+
+  .oper{
+    padding: 6px 6px;
+    border-radius: 5px;
+    background-color: #2046da;
+    color: white;
+    font-size: 13px;
+  }
+  
+
+  
+
+
