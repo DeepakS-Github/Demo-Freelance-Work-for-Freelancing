@@ -9,9 +9,12 @@
 </head>
 
 <body>
+    <section class="contain">
+    <section class="side-bar"></section>
+    <section class="content-bar">
     <section class="upper">
         <div class="navbar">
-            <div class="left"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+            <div class="left"><i id="btn" class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
             <div class="right">
                 <div class="web-link"><i class="fa-solid fa-house" style="color: #ffffff;"></i>Visit Website</div>
                 <div class="profile-link">
@@ -185,6 +188,7 @@
                 <p>Search: <input type="search"></p>
               </div>
             </div>
+            <div class="table-outer">
               <table>
                 <thead>
                   <tr>
@@ -267,6 +271,7 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
               <div class="footer">
                 <p>Showing 1 to 6 of 6 results</p>
                 <p class="pagination"><span>Previous</span><span class="box">1</span><span>Next</span></p>
@@ -277,11 +282,35 @@
 
         </div>
     </section>
+</section>
+</section>
 
 
 
 
     <script src="https://kit.fontawesome.com/c3fda327bb.js" crossorigin="anonymous"></script>
+
+    <script>
+        var sideBar = document.querySelector('.side-bar');
+        var contentBar = document.querySelector('.content-bar');
+        var button = document.querySelector('#btn');
+        let isOpened = false;
+
+        button.addEventListener('click', function() {
+
+            if(!isOpened){
+                sideBar.style.width = '15%';
+                contentBar.style.width = '85%'
+                isOpened = true;
+            }
+            else{
+                sideBar.style.width = '5%';
+                contentBar.style.width = '95%'
+                isOpened = false;
+            }
+        });
+        
+    </script>
 </body>
 
 </html>
