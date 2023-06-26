@@ -58,7 +58,7 @@ section{
 }
 
 .big-sidebar div i{
-  margin: 0 10px;
+  margin: 0 25px;
   font-size: 18px;
 }
 
@@ -354,6 +354,7 @@ section{
     font-size: 13px;
   }
 
+ 
   
 
   .oper{
@@ -364,7 +365,46 @@ section{
     font-size: 13px;
   }
   
+  .profile-link{
+    position: relative;
+  }
 
+  .profile-box {
+    display: none;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    top: 50%;
+    right: 0%;
+    z-index: 999;
+    position: absolute;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .column {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 8px 10px;
+    white-space: nowrap;
+    color: #212529;
+  }
+
+  .column i{
+    width: 30px;
+  }
+  
+  .logout {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 8px 10px;
+    white-space: nowrap;
+    color: red;
+  }
+
+  .logout i{
+    width: 30px;
+  }
   
 
 

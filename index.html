@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -39,7 +39,13 @@
             <div class="right">
                 <div class="web-link"><i class="fa-solid fa-house" style="color: #ffffff;"></i>Visit Website</div>
                 <div class="profile-link">
-                    <img src="cesar-rincon-XHVpWcr5grQ-unsplash.jpg"><span class="nami">Deepak</span>
+                    <img src="cesar-rincon-XHVpWcr5grQ-unsplash.jpg"><span class="nami" id="profileBtn">Deepak</span>
+                    <div id="profileBox" class="profile-box">
+                        <div class="column"><i class="fa-regular fa-user"></i><span>My profile</span></div>
+                        <div class="column"><i class="fa-solid fa-shop"></i><span>Shop profile</span></div>
+                        <div class="column"><i class="fa-solid fa-lock"></i><span>Change Password</span></div>
+                        <div class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log out</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,7 +335,7 @@
                 setTimeout(function() {
                     smallSidebar.style.display = 'none';
                     bigSidebar.style.display = 'flex';
-                }, 200);
+                }, 300);
                 
             }
             else{
@@ -342,6 +348,23 @@
                 
             }
         });
+
+        var profileBtn = document.querySelector('#profileBtn');
+        var profileBox  = document.querySelector('#profileBox');
+        let isProfileOpened = true;
+
+
+        profileBtn.addEventListener('click', function() {
+            if(!isProfileOpened){
+                profileBox.style.display = 'none';
+                isProfileOpened = true;
+            }
+            else{
+                profileBox.style.display = 'block';
+                isProfileOpened = false;
+            }
+        });
+
         
     </script>
 </body>
