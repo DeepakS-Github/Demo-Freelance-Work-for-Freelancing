@@ -405,6 +405,41 @@ section{
   .logout i{
     width: 30px;
   }
+
+  @media (max-width: 1450px) {
+
+    .contain{
+      position: relative;
+      width: 100%;
+    }
+
+    .side-bar{
+      transition: left 0.75s ease;
+      display: block;
+      position: fixed;
+      width: 250px;
+      height: 100%;
+      left: -100%; 
+      z-index: 999;
+      background: white;
+    }
+
+    .small-sidebar{
+      display: none;
+    }
+
+    .content-bar{
+      width: 100vw;
+    }
+
+    .big-sidebar{
+      position: absolute;
+      display: flex;
+      z-index: 999;
+      background: white;
+    }
+    
+  }
   
 
 
