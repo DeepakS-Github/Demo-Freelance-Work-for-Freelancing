@@ -27,6 +27,52 @@ section{
   
 }
 
+.small-sidebar{
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.small-sidebar div{
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+}
+
+.small-sidebar div span i{
+  font-size: 18px;
+  padding: 15px 15px ;
+}
+
+.big-sidebar{
+  display: none;
+  flex-direction: column;
+}
+
+.big-sidebar div{
+  display: flex;
+  margin: 15px 0;
+  justify-content: start;
+  font-size: 15px;
+}
+
+.big-sidebar div i{
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.logo{
+  padding-top: 12px;
+}
+
+
+
+.selected{
+  background-color: #6777ef;
+  border-radius: 5px;
+}
+
 .content-bar{
   width: 95%;
   order: 2;

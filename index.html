@@ -10,7 +10,28 @@
 
 <body>
     <section class="contain">
-    <section class="side-bar"></section>
+    <section class="side-bar">
+        <div class="small-sidebar">
+            <div><span><i class="fa-brands fa-google"></i></span></div>
+            <div><span><i class="selected fa-solid fa-house" style="color: #ffffff;"></i></span></div>
+            <div><span><i class="fa-solid fa-cart-shopping" style="color: #92a0a7;"></i></span></div>
+            <div><span><i class="fa-solid fa-boxes-stacked"  style="color: #92a0a7;"></i></span></div>
+            <div><span><i class="fa-solid fa-boxes-stacked"  style="color: #92a0a7;"></i></span></div>
+            <div><span><i class="fa-regular fa-newspaper"  style="color: #92a0a7;"></i></span></div>
+            <div><span><i class="fa-regular fa-newspaper"  style="color: #92a0a7;"></i></span></div>
+            <div><span><i class="fa-solid fa-user"  style="color: #92a0a7;"></i></span></div>
+        </div>
+        <div class="big-sidebar">
+            <div class="logo"><span><i class="fa-brands fa-google"></i>Google</span></div>
+            <div><span  style="color: #6777ef;"><i class="fa-solid fa-house"></i>Dashboard</span></div>
+            <div><span  style="color: #92a0a7;"><i class="fa-solid fa-cart-shopping"></i>Orders</span></div>
+            <div><span  style="color: #92a0a7;"><i class="fa-solid fa-boxes-stacked"></i>Manage Products</span></div>
+            <div><span  style="color: #92a0a7;"><i class="fa-solid fa-boxes-stacked"></i>Inventory</span></div>
+            <div><span  style="color: #92a0a7;"><i class="fa-regular fa-newspaper"></i>My Withdraw</span></div>
+            <div><span style="color: #92a0a7;"><i class="fa-regular fa-newspaper"></i>Message</span></div>
+            <div><span style="color: #92a0a7;"><i class="fa-solid fa-user"></i>Visit User Dashboard</span></div>
+        </div>
+    </section>
     <section class="content-bar">
     <section class="upper">
         <div class="navbar">
@@ -293,8 +314,11 @@
     <script>
         var sideBar = document.querySelector('.side-bar');
         var contentBar = document.querySelector('.content-bar');
+        var smallSidebar = document.querySelector('.small-sidebar');
+        var bigSidebar = document.querySelector('.big-sidebar');
         var button = document.querySelector('#btn');
         let isOpened = false;
+
 
         button.addEventListener('click', function() {
 
@@ -302,11 +326,20 @@
                 sideBar.style.width = '15%';
                 contentBar.style.width = '85%'
                 isOpened = true;
+                setTimeout(function() {
+                    smallSidebar.style.display = 'none';
+                    bigSidebar.style.display = 'flex';
+                }, 200);
+                
             }
             else{
                 sideBar.style.width = '5%';
                 contentBar.style.width = '95%'
                 isOpened = false;
+                
+                smallSidebar.style.display = 'flex';
+                bigSidebar.style.display = 'none';
+                
             }
         });
         
